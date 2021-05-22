@@ -1,11 +1,12 @@
 import React from 'react';
 import Rating from './Rating';
 
-export default function MovieCard({movie}) {
+
+const MovieCard = ({movie}) => {
 
     return (
         <div >
-         <h1 style={{color: "pink"}}> {movie.header}</h1> 
+          <h1 style={{color: "pink"}}>  {movie.header}  </h1> 
          <Rating rate={movie.rate} />
          <br />
          <p> {movie.description}</p> 
@@ -19,3 +20,5 @@ export default function MovieCard({movie}) {
     )
    
 }
+
+export default MovieCard;
