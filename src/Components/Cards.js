@@ -15,13 +15,12 @@ rate:0,
     const handleAdd=(x)=>setMovies([...movies,x]);
     const handleChange=(e)=>setMovie({...movie, [e.target.name]:e.target.value});
     const handleShow= ()=>setShowResults(!showResults);
-    const forza=()=> {
+    const forza=(e)=> {
+        e.preventDefault();
         handleShow();
         handleAdd(movie);
-       
-
     }
-    
+
     return (
         <div>
       { showResults && <div>

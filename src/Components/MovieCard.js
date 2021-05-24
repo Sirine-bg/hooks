@@ -2,7 +2,7 @@ import React from 'react';
 import Rating from './Rating';
 
 
-const MovieCard = ({movie}) => {
+const MovieCard = ({key,movie}) => {
 
     return (
         <div >

@@ -2,10 +2,12 @@ import React, { useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Components/Cards';
 import  Filtermoviee from './Components/Filtermoviee';
-import Footer from './Components/Footer';
 import List from './Components/List'
-import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
-import Trailer from './Components/Trailer';
+import { Route,  BrowserRouter as Router } from 'react-router-dom';
+import Trailer1 from './Components/Trailer1';
+import Trailer2 from './Components/Trailer2';
+import Trailer3 from './Components/Trailer3';
+
 
 
 function App() {
@@ -15,7 +17,10 @@ function App() {
     <Router>
     <div className="App" style={{textAlign: 'center', backgroundColor: 'grey', marginTop: '0px'}}>
     
-    <Route path= "/trailer" exact component={Trailer}/>
+    <Route path= "/trailer1" exact component={Trailer1}/>
+    <Route path= "/trailer2" exact component={Trailer2}/>
+    <Route path= "/trailer3" exact component={Trailer3}/>
+
     <Route path= "/" exact component={Home}/>
     
     
@@ -36,6 +41,7 @@ const Home = () => {
      
      image: '/grace.jpg',
      rate: 3,
+     trailer: ''
       
    },
    {
